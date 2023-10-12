@@ -245,6 +245,101 @@
      object-fit: cover;
 }
 
+.header_main_nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.header_main_nav a {
+  color: var(--text-on-interactive, #FFF);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: SF Pro Text;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+.header_main_nav .header_main_nav_activ {
+  color: #80CFD5;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: SF Pro Text;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+.basket {
+  display: flex;
+  padding: 8px 14px 8px 12px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+  border: 1px solid var(--Button-border-gradient, #BABFC3);
+  background: var(--action-secondary-default, #FFF);
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
+}
+.basket p {
+  color: var(--text-default, #202223);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: SF Pro Text;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 133.333% */
+}
+
+.basket_img {
+  max-width: 20px;
+  max-height: 20px;
+}
+.basket_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section_animals {
+  padding: 24px 0;
+  background: var(--background-default, #F6F6F7);
+}
+
+.main_animals_list {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.main_animal_item {
+  display: flex;
+  gap: 16px;
+  background: #FFF;
+  border-radius: 5px;
+  padding-right: 50px;
+}
+.main_animal_item p {
+  color: var(--text-default, #202223);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: SF Pro Text;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  align-self: center;
+}
+
+.main_animal_img {
+  max-width: 85px;
+  max-height: 85px;
+}
+.main_animal_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
