@@ -85,8 +85,12 @@
         font-style: normal;
         font-weight: 500;
         line-height: 20px; /* 142.857% */
+        &:hover {
+            text-decoration-line: underline;
+            text-underline-offset: 3px;
+        }
     }
-    & .header_main_nav_activ {
+    & .header_main_nav_active {
         color: #80CFD5;
         font-feature-settings: 'clig' off, 'liga' off;
         font-family: SF Pro Text;

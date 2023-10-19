@@ -259,7 +259,11 @@
   font-weight: 500;
   line-height: 20px; /* 142.857% */
 }
-.header_main_nav .header_main_nav_activ {
+.header_main_nav a:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
+}
+.header_main_nav .header_main_nav_active {
   color: #80CFD5;
   font-feature-settings: "clig" off, "liga" off;
   font-family: SF Pro Text;
@@ -328,6 +332,9 @@
   line-height: 24px; /* 150% */
   align-self: center;
 }
+.main_animal_item:hover p {
+  color: var(--icon-highlight, #00A0AC);
+}
 
 .main_animal_img {
   max-width: 85px;
@@ -340,8 +347,178 @@
      object-fit: contain;
 }
 
+.advertising_wrapper {
+  display: flex;
+  padding: 33px 0 40px 0;
+  gap: 74px;
+  align-items: center;
+}
+
+.advertising_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.advertising_info_text {
+  display: flex;
+  gap: 32px;
+}
+.advertising_info_text p {
+  position: relative;
+  padding-left: 8px;
+  color: var(--text-default, #202223);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: SF Pro Text;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+.advertising_info_text p::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  display: block;
+  width: 2px;
+  height: 42px;
+  background: #98C6CD;
+}
+.advertising_info_text span {
+  color: var(--text-default, #202223);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: SF Pro Text;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 20.8px */
+}
+
+.advertising_info_title {
+  color: var(--text-default, #202223);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: SF Pro Display;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 50.4px */
+}
+
+.advertising_button {
+  display: block;
+  border-radius: 4px;
+  background: var(--icon-highlight, #00A0AC);
+  box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.2) inset, 0px 1px 0px 0px rgba(0, 0, 0, 0.08);
+  padding: 12px 24px;
+  align-items: center;
+  color: var(--text-on-primary, #FFF);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  /* Desktop/Button */
+  font-family: SF Pro Text;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+.advertising_button:hover {
+  background: var(--text-highlight, #347C84);
+  box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.2) inset, 0px 1px 0px 0px rgba(0, 0, 0, 0.08);
+}
+
+.advertising_img {
+  width: 100%;
+  height: 100%;
+  max-width: 573px;
+  max-height: 377px;
+}
+.advertising_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.discount_popular_goods_wrapper {
+  padding: 56px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.discount {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.discount_item {
+  border-radius: 5px;
+  padding: 24px 23px 23px 24px;
+  flex: 1 1 569px;
+}
+
+.discount_item_action {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+.discount_item_action a {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid var(--border-default, #8C9196);
+  background: #FFF;
+  color: var(--text-default, #202223);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  /* Desktop/Button */
+  font-family: SF Pro Text;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+.discount_item_action a:hover {
+  background: var(--action-secondary-hovered, #F6F6F7);
+}
+.discount_item_action h3 {
+  color: var(--text-default, #202223);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: SF Pro Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 26px */
+}
+
+.pets {
+  background-color: var(--surface-warning-default, #FFD79D);
+  background-image: url("../img/pets.png");
+  background-repeat: no-repeat;
+  background-position: 397px 100%;
+}
+.pets div {
+  max-width: 355px;
+}
+
+.cat {
+  background-color: var(--surface-success-default, #AEE9D1);
+  background-image: url("../img/grey_cat.png");
+  background-repeat: no-repeat;
+  background-position: 345px 100%;
+  padding-right: 28px;
+}
+.cat div {
+  max-width: 392px;
+}
+
+.discount_popular_goods {
+  background: var(--background-default, #F6F6F7);
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
-  padding: 0 12px;
 }/*# sourceMappingURL=style.css.map */
