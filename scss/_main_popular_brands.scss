@@ -1,0 +1,41 @@
+.popular_brands {
+    padding: 56px 0;
+}
+
+.popular_brands_wrapper {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    & h2 {
+        color: var(--text-default, #202223);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: SF Pro Display;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px; /* 114.286% */
+    }
+}
+
+.popular_brands {
+    background: #F6F6F7;
+}
+
+.brand_list {
+    display: flex;
+    column-gap: 25px;
+    flex-wrap: wrap;
+    row-gap: 24px;
+ 
+}
+
+.brand_list_item {
+    & a {
+        display: block;
+        padding: 14px 20px;
+        background: #FFFFFF;
+        border-radius: 4px;
+        max-width: 174px;
+    }
+
+}

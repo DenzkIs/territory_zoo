@@ -1,7 +1,3 @@
-.slider {
-    padding: 24px 0;
-}
-
 .slider_button {
     display: flex;
     justify-content: center;
@@ -27,6 +23,9 @@
     max-width: 270px;
     border-radius: 5px;
     background: #FFF;
+    &:hover{
+        box-shadow: 0px 12px 32px 0px rgba(0, 0, 0, 0.10), 0px 0px 2px 0px rgba(0, 0, 0, 0.06);
+    }
 }
 
 .slider_item_product {
@@ -125,4 +124,20 @@
         background: var(--icon-highlight, #00A0AC);
         color: #FFF;
     }
-}   
+}
+
+.slick-track{
+    display: flex;
+    justify-content: space-between;
+
+}
+.slick-list{
+    overflow: hidden;
+}
+
+.slider {
+    padding: 24px 0;
+    & .slick-arrow{
+        display: none;
+    }
+}

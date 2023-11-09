@@ -1,0 +1,20 @@
+.shop_reviews {
+    padding: 56px 0;
+    background: #F6F6F7;
+}
+.shop_reviews_wrapper {
+    text-align: center;
+    padding: 24px 0 16px 0;
+    border-radius: 5px;
+    background: #FFF;
+    & h2 {
+        margin-bottom: 24px;
+        color: var(--text-default, #202223);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: SF Pro Display;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px; /* 114.286% */
+    }
+}
