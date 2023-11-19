@@ -7,6 +7,7 @@
     padding: 24px 0 16px 0;
     border-radius: 5px;
     background: #FFF;
+    min-width: 0;
     & h2 {
         margin-bottom: 24px;
         color: var(--text-default, #202223);
@@ -17,4 +18,86 @@
         font-weight: 600;
         line-height: 32px; /* 114.286% */
     }
+}
+
+.shop_review_slider_item {
+    & h4 {
+        color: var(--text-default, #202223);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: SF Pro Text;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 150% */
+    }
+}
+.item_text {
+    color: var(--text-default, #202223);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    max-width: 718px;
+    margin: 12px auto;
+}
+.shop_review_contacts {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.shop_review_phone {
+    display: flex;
+    gap: 4px; 
+    & img {
+        color: #8C8196;
+    }
+    & p {
+        color: var(--text-subdued, #6D7175);
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: SF Pro Text;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+    }
+}
+.shop_review_pet {
+    color: var(--text-subdued, #6D7175);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.shop_review_slider_button {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+.shop_review_slider {
+    min-width: 0;
+    & .slick_track {
+        justify-content: initial;
+    }
+    & .slick-dots {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        & li {
+            display: none;
+            &:last-child {
+                display: block;
+            }
+        }
+        & .slick-active {
+            display: block;
+        }
+    }
+
 }
